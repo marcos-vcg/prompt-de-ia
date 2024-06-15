@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Prompts para IA</title>
+
+    <!-- Atualiza a página a cada 60 segundos -->
+    <!-- <meta http-equiv="refresh" content="60" /> -->
+</head>
+
+<body>
+    <div class="row">
+        <section class="head">
+            <div class="col">
+                <div class="title">Prompt de IA</div>
+                <div class="subtitle">Uma forma simples de gerar prompts para Inteligência Atrificial</div>
+            </div>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="body">
+
+            <div class="row">
+                <div class="container col">
+
+                    <div class="container-title row">Forneça as informações</div>
+
+                    <div class="container-card row">
+                        <label for="papel" title="Este campo serve para definir o papel">Sobre Mim</label>
+
+                        <textarea name="a" id="papel" maxlength="500" rows="3" cols="50" autocomplete="on"
+                            spellcheck="true" required
+                            title="Informe o papel de quem desempenha determinada função para dar um maior contexto de por quem será usado o resultado">Líder de vendas de uma empresa montadora de veículos</textarea>
+                    </div>
+
+                    <div class="container-card row">
+                        <label for="acao" title="Este é o campo sobre o objetivo solicitado">Preciso Disto</label>
+
+                        <textarea name="a" id="acao" maxlength="500" rows="3" cols="50" autocomplete="on"
+                            spellcheck="true" required
+                            title="Informe o objetivo geral do que será solicitado a IA">Slides para demonstrar crescimento de uma empresa de venda de automóveis</textarea>
+                    </div>
+
+                    <div class="container-card row">
+                        <label for="contexto" title="Este é o contexto para gerar conteúdo direcionado">Contexto
+                            Específico</label>
+
+                        <textarea name="a" id="contexto" maxlength="500" rows="3" cols="50" autocomplete="on"
+                            spellcheck="true" required
+                            title="Informe o contexto com dados de mercado, número de vendas...">No ultimo ano houve cerca de 320 vendas de automóveis, um crescimento de 10% em relação ao ano anterior</textarea>
+                    </div>
+
+                    <div class="container-card row">
+                        <label for="intencao" title="Este é o conteúdo que se quer gerar">Conteúdo a Gerar</label>
+
+                        <textarea name="a" id="intencao" maxlength="500" rows="3" cols="50" autocomplete="on"
+                            spellcheck="true" required
+                            title="Informe o conteúdo esperado a ser criado pela IA">Insights com estratégias para uma apresentação para a empresa evidenciando os pontos fortes e as oportunidades para investimentos</textarea>
+                    </div>
+
+                    <div class="container-card row">
+                        <label for="formato" title="Este é o formato da resposta">Formato da Resposta</label>
+
+                        <textarea name="a" id="formato" maxlength="500" rows="3" cols="50" autocomplete="on"
+                            spellcheck="true" required
+                            title="Informe em que a IA deverá entregar a resposta">Lista de tópicos para os slides de uma apresentação com pontos chave a serem abordados em cada slide</textarea>
+                    </div>
+
+                    <button class="button" onclick="generate()" onmouseover="">Gerar</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="container col">
+
+                    <div class="container-title row">Seu script fica assim</div>
+
+                    <div class="container-card row">
+                        <label for="prompt" title="Este é o tooltip">Copie e cole</label>
+                        <textarea name="prompt" id="prompt" rows="10" cols="40" readonly></textarea>
+                    </div>
+
+                    <div class="row buttons-inline">
+                        <button class=" button" onclick="copy()" onmouseover="">Copiar</button>
+                        <a href="https://copilot.microsoft.com/" target="_blank" rel="noopener noreferrer">
+                            <button class=" button" onmouseover="">Abrir IA</button>
+                        </a>
+                        <!-- <button class=" button" onclick="imprimir()" onmouseover="">Imprimir</button> -->
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <section class="footer row">
+        <h5>Desenvolvido por Marcos Costa. Exclusivo para uso sem fins lucrativos</h5>
+    </section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
